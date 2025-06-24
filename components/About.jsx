@@ -65,7 +65,7 @@ const InterfaceCard = ({ title, gradient, isMain }) => (
   </div>
 );
 
-const Hero = () => {
+const About = () => {
   return (
     <div className="bg-gradient-to-br from-pink-50 via-purple-50 to-indigo-50 relative -z-10">
       <section className="relative overflow-hidden px-4 pt-8 pb-32">
@@ -187,4 +187,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default About;
