@@ -22,8 +22,6 @@ const Contactpage = ({ session }) => {
    const [open, setOpen] = useState(false);
   const [alertType, setAlertType] = useState("success"); // "success" or "error"
 
-  console.log(session);
-
   const inv = {
     firstname: "",
     lastname: "",
@@ -50,8 +48,6 @@ const Contactpage = ({ session }) => {
       };
 
       const docRef = await addDoc(collection(db, "contact"), contactdata);
-      console.log(contactdata);
-      console.log("Document written with ID: ", docRef.id);
       setAlertType("success"); // set to success
     setOpen(true);
       resetForm();

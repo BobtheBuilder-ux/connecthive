@@ -27,7 +27,6 @@ export default function ConnectComponent({ session }) {
         achievementData.push(achieve);
       });
       setAchievements(achievementData);
-      console.log(achievements);
     } catch (error) {
       console.error(error);
       alert("oops, something went wrong");

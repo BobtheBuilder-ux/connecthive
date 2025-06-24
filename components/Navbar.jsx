@@ -10,10 +10,7 @@ import MenuItem from "@mui/material/MenuItem";
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
-  console.log(navOpen);
-
   const { data: session } = useSession();
-  console.log(session);
 
   const navItems = [
     { label: "Home", url: "/" },

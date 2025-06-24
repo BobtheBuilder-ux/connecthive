@@ -12,8 +12,6 @@ const Achievement = ({ session }) => {
   const [processing, setProcessing] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
-  console.log(showModal);
-
   const initialValues = {
     position: "",
     achievement: "",
@@ -41,8 +39,6 @@ const Achievement = ({ session }) => {
         collection(db, "achievements"),
         achievementData
       );
-      console.log(achievementData);
-      console.log("Document written with ID: ", docRef.id);
       resetForm();
       setShowModal(true);
     } catch (error) {

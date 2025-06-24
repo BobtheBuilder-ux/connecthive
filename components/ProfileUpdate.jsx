@@ -5,10 +5,9 @@ import { db } from "@/lib/firebaseConfig";
 
 const ProfileUpdate = ({ uid, uname }) => {
   const [name, setName] = useState(uname);
-  console.log(uid, uname);
 
   const handleUpdate = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
     if (!name.trim()) {
       alert("Name cannot be empty");
     }
